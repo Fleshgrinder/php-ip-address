@@ -1,0 +1,48 @@
+{
+	"name": "fleshgrinder/ip-address",
+	"description": "Immutable value objects to represent an arbitrary but valid Internet Protocol address in version 4 or 6.",
+	"homepage": "https://github.com/fleshgrinder/php-ip-address",
+	"keywords": [
+		"internet protocol",
+		"ip",
+		"ip address",
+		"ipv4",
+		"ipv6",
+		"network"
+	],
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Richard Fussenegger",
+			"email": "fleshgrinder@users.noreply.github.com",
+			"homepage": "http://richard.fussenegger.info/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php-64bit": "^7.0",
+		"fleshgrinder/assertion": "^1.1",
+		"fleshgrinder/equalable": "^0.1.0",
+		"fleshgrinder/stringable": "^0.1.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^5.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Fleshgrinder\\Network\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Fleshgrinder\\Network\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"scripts": {
+		"test": "phpunit"
+	}
+}
